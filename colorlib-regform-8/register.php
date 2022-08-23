@@ -113,7 +113,7 @@ function get($sakthi)
                         </div>
                         <div class="form-group">
                              <label>Enter Your Password</label> <span class="error">*</span>
-                            <input type="text" class="form-input" name="password" id="password"/>
+                            <input type="password" class="form-input" name="password" id="password"/>
                             <!-- <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span> -->
                             <span class="error"><?php echo $passwordErr;?></span>
                         </div>

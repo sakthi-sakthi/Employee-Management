@@ -83,7 +83,32 @@ session_destroy();
     <div class="container">
         <div class="row">
             <div class="col-12">
-
+              <?php 
+                    if(isset($_SESSION['status']))
+                    {
+                        ?>
+                        <div class="alert alert-danger alert-dismissible fade show " role="alert">
+                          <strong>Hey ! </strong> <?php echo $_SESSION['status'];?>
+                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        <?php
+                        
+                        unset($_SESSION['status']);
+                    }
+              ?>
+               <?php 
+                    if(isset($_SESSION['status']))
+                    {
+                        ?>
+                        <div class="alert alert-danger alert-dismissible fade show " role="alert">
+                          <strong>Hey ! </strong> <?php echo $_SESSION['status'];?>
+                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        <?php
+                        
+                        unset($_SESSION['status']);
+                    }
+              ?>    
                 <div class="data_table">
                      <div class="left">
                         <td><a href="http://localhost/new_login/new-reg.php" class="btn btn-primary">Add User</a></td>
@@ -91,6 +116,7 @@ session_destroy();
                 <td><a href="http://localhost/new_login/index.php" class="btn btn-danger">Logout</a></td>
                 </div>
             </div>
+            
                     <table id="example" class="table table-striped table-bordered">
                         <thead class="table-dark">
                             <tr>

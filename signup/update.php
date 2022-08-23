@@ -27,7 +27,9 @@ if(isset($_POST['submit'])){
       $query="UPDATE employee set emp_name='$emp_name',emp_id='$emp_id',employeer_name='$employeer_name',unit='$unit',dob='$dob',email='$email'where id='".$_GET['id']."'";
 
    $run1=mysqli_query($conn,$query);
-        if($run1){
+        if($run1)
+        {
+        		$_SESSION['status'] = "Data Updated Successfully";
 
         		header('location:http://localhost/new_login/display.php');
            
@@ -82,7 +84,7 @@ if(isset($_POST['submit'])){
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
-	 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<!--  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	 <script type="text/javascript">
         $(document).ready(function() {
         $(".update").click(function(){
@@ -94,7 +96,7 @@ if(isset($_POST['submit'])){
 
         });
     });
-</script>
+</script> -->
 </head>
 <body>
 

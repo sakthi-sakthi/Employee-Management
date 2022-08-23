@@ -16,8 +16,9 @@ if(isset($_POST['submit'])){
         $run = mysqli_query($conn,$query) or die(mysqli_error());
 
 
-        if($run){
-
+        if($run)
+        {
+        		$_SESSION['status'] = "Data Inserted Successfully";
         		header('location:http://localhost/new_login/display.php');
            
         }
@@ -129,9 +130,7 @@ if(isset($_POST['submit'])){
 					<div class="container-login100-form-btn">
 					<button class="insert login100-form-btn" name="submit">Submit</button>
 					</div>
-					<div class="container-login100-form-btn">
-						<a href="http://localhost/new_login/index.php">Already Have an account?</a>
-					</div>
+					
 				</form>
 			</div>
 		</div>
