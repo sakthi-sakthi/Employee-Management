@@ -5,5 +5,5 @@ A employee can add , update , view , and delete the record.
 The DataBase name is 'main'.
 Import the DataBase.
 Extract the folder using WinRar application.
-Open Your Browser and enter the login URL -> http://localhost/new_login/index.php
-![image](https://user-images.githubusercontent.com/110651198/186151993-8368f084-5902-41b0-ba94-0e014e767608.png).
+Open Your Browser and enter the login URL -> http://localhost/Employee-Management
+![image](https://user-images.githubusercontent.com/110651198/186355561-24c9b00e-cf48-46d5-991c-fdb6e8d751e6.png)
