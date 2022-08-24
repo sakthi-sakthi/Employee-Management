@@ -1,8 +1,9 @@
 <?php
 session_start();
-if(!$_SESSION['login']){
-   header("location:http://localhost/Employee-Management/index.php");
-   die;
+if(!isset($_SERVER['HTTP_REFERER']))
+{    
+    header('location:/Employee-Management/index.php');
+    exit;
 }
 include 'db.php';
 $result = mysqli_query($conn,"SELECT * FROM employee");
