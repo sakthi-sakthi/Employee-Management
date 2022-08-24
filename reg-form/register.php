@@ -1,5 +1,9 @@
 <?php
 session_start();
+if(!$_SESSION['login']){
+   header("location:http://localhost/Employee-Management/index.php");
+   die;
+}
 
 include"db.php";
 $nameErr = $emailErr = $passwordErr ="";

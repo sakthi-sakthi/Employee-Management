@@ -1,8 +1,7 @@
 <?php
 session_start();
+
 include "db.php";
-
-
 if(isset($_POST['email']) && isset($_POST['password']))
 {
   function validate($form)
@@ -35,6 +34,7 @@ if(isset($_POST['email']) && isset($_POST['password']))
     $sql="SELECT * FROM  users  WHERE email='$email' AND password='$password'";
 
     $result =mysqli_query($conn,$sql);
+    $_SESSION['login'] = true;
 
     if(mysqli_num_rows($result) === 1)
     {

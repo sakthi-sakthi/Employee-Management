@@ -1,5 +1,11 @@
 <?php
 session_start();
+
+if(!$_SESSION['login']){
+   header("location:index.php");
+   die;
+}
+
 include 'db.php';
 $sql="SELECT * FROM employee";
 $result=$conn->query($sql);

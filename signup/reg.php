@@ -1,5 +1,9 @@
 <?php
 session_start();
+if(!$_SESSION['login']){
+   header("location:http://localhost/Employee-Management/index.php");
+   die;
+}
 include"db.php";
 if(isset($_POST['submit'])){
     if(!empty($_POST['emp_name']) && !empty($_POST['emp_id']) && !empty($_POST['employeer_name']) && !empty($_POST['unit']) && !empty($_POST['dob']) && !empty($_POST['email']));
