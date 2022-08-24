@@ -1,5 +1,10 @@
 <?php
 session_start();
+if(!isset($_SERVER['HTTP_REFERER']))
+{    
+    header('location:/Employee-Management/index.php');
+    exit;
+}
 include"db.php";
 $nameErr = $emailErr = $passwordErr ="";
 $name = $email = $password ="";
