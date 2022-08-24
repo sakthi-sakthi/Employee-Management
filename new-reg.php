@@ -155,23 +155,6 @@ if(isset($_POST['submit'])){
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
-	 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	 	 <script>
-	 	$(document).ready(function(){
-	 		$(".insert").click(function(){
-	 			swal({
-				  title: "Welcome !",
-				  text: "Account Created successfully !",
-				  icon: "success",
-				  button: "Done !",
-				});
-
-
-	 		});
-	 	});
-	 </script>
-
-
 	
 </body>
 </html>
