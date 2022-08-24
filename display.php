@@ -1,11 +1,6 @@
 <?php
 session_start();
 
-if(!$_SESSION['login']){
-   header("location:index.php");
-   die;
-}
-
 include 'db.php';
 $sql="SELECT * FROM employee";
 $result=$conn->query($sql);
@@ -72,12 +67,7 @@ session_destroy();
     <script src="assets/js/custom.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     
-
-
-
 </head>
-<!-- =============== Design & Develop By = MJ MARAZ   ====================== -->
-
 <body>
     
     <header class="header_part" style="background-color:MidnightBlue;">
