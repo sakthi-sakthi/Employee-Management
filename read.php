@@ -89,7 +89,7 @@ while ($row=mysqli_fetch_array($ret)) {
          
 </table>
 <center>
-      <td><a href="http://localhost/new_login/display.php"  class="btn btn-danger">Back</a></td>
+      <td><a href="http://localhost/Employee-Management/display.php"  class="btn btn-danger">Back</a></td>
     </center>
     </div>
 </div>     

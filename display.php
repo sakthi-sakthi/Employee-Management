@@ -14,7 +14,7 @@ if (isset($_GET['id']))
      if ($result == TRUE) 
      {
         echo "Record deleted successfully.";
-        header('location:http://localhost/new_login/display.php');
+        header('location:http://localhost/Employee-Management/display.php');
     }
     else
     {
@@ -111,9 +111,9 @@ session_destroy();
               ?>    
                 <div class="data_table">
                      <div class="left">
-                        <td><a href="http://localhost/new_login/new-reg.php" class="btn btn-primary">Add User</a></td>
+                        <td><a href="http://localhost/Employee-Management/new-reg.php" class="btn btn-primary">Add User</a></td>
                         <div class="right">
-                <td><a href="http://localhost/new_login/index.php" class="btn btn-danger">Logout</a></td>
+                <td><a href="http://localhost/Employee-Management/index.php" class="btn btn-danger">Logout</a></td>
                 </div>
             </div>
             
@@ -145,8 +145,8 @@ session_destroy();
                     <td><?php echo $row['dob']; ?></td>
                     <td><?php echo $row['email']; ?></td>
 
-                    <td><a href="http://localhost/new_login/read.php?id=<?php echo$row["id"];?>" class="btn btn-primary">View</a></td> 
-                   <td><a href="http://localhost/new_login/signup/update.php?id=<?php echo$row["id"];?>" class="btn btn-success">Update</a></td> 
+                    <td><a href="http://localhost/Employee-Management/read.php?id=<?php echo$row["id"];?>" class="btn btn-primary">View</a></td> 
+                   <td><a href="http://localhost/Employee-Management/signup/update.php?id=<?php echo$row["id"];?>" class="btn btn-success">Update</a></td> 
                     <td><input type="button"  name="delete" value="Delete" class="del btn btn-danger"></td>
       
                      <script type="text/javascript">
@@ -163,7 +163,7 @@ session_destroy();
 
                 var id = $(this).parents("tr").attr("id");
 
-                window.location.href="http://localhost/new_login/delete.php?id="+id+"";
+                window.location.href="http://localhost/Employee-Management/delete.php?id="+id+"";
                 swal("Yaa! Record successfully deleted!", {
                     icon: "success",
                 });

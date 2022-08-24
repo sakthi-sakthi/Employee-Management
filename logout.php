@@ -2,6 +2,6 @@
 session_start();
 session_destroy();
 {
-	header('location:http://localhost/new_login/index.php');
+	header('location:http://localhost/Employee-Management/index.php');
 }
 ?>

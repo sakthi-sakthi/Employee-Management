@@ -42,7 +42,7 @@ if(isset($_POST['email']) && isset($_POST['password']))
 
       if ($row['email']===$email && $row['password']===$password)
       {
-        header("location:http://localhost/new_login/display.php");
+        header("location:http://localhost/Employee-Management/display.php");
       }
       else
       {
@@ -115,7 +115,7 @@ if(isset($_POST['email']) && isset($_POST['password']))
               
              </div>
                 <div class="container">
-            <label> Don't Have an account ?</label> <a style="text-decoration: none; color: darkblue;" href="http://localhost/new_login/colorlib-regform-8/register.php">Register Here</a>
+            <label> Don't Have an account ?</label> <a style="text-decoration: none; color: darkblue;" href="http://localhost/Employee-Management/reg-form/register.php">Register Here</a>
       </br></br>
               <input type="submit" value="login" class="btn btn-block btn-danger" name="login" style="border-radius:10px;">
 

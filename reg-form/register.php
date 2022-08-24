@@ -50,7 +50,7 @@ if(isset($_POST['submit'])){
 
         if($run){
 
-                header('location:http://localhost/new_login/index.php');
+                header('location:http://localhost/Employee-Management/index.php');
            
         }
         else{
@@ -128,7 +128,7 @@ function get($sakthi)
                         </div>
                     </form>
                     <p class="loginhere">
-                        Have already an account ? <a href="http://localhost/new_login/index.php" class="loginhere-link">Login here</a>
+                        Have already an account ? <a href="http://localhost/Employee-Management/index.php" class="loginhere-link">Login here</a>
                     </p>
                 </div>
             </div>

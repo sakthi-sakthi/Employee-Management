@@ -31,7 +31,7 @@ if(isset($_POST['submit'])){
         {
         		$_SESSION['status'] = "Data Updated Successfully";
 
-        		header('location:http://localhost/new_login/display.php');
+        		header('location:http://localhost/Employee-Management/display.php');
            
         }
         else{

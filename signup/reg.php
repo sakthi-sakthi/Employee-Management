@@ -18,7 +18,7 @@ if(isset($_POST['submit'])){
 
         if($run){
 
-        		header('location:http://localhost/new_login/index.php');
+        		header('location:http://localhost/Employee-Management/index.php');
            
         }
         else{
@@ -130,7 +130,7 @@ if(isset($_POST['submit'])){
 					<button class="login100-form-btn" name="submit">SignUp</button>
 					</div>
 					<div class="container-login100-form-btn">
-						<a href="http://localhost/new_login/index.php">Already Have an account?</a>
+						<a href="http://localhost/Employee-Management/index.php">Already Have an account?</a>
 					</div>
 				</form>
 			</div>

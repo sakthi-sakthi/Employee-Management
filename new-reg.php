@@ -19,7 +19,7 @@ if(isset($_POST['submit'])){
         if($run)
         {
         		$_SESSION['status'] = "Data Inserted Successfully";
-        		header('location:http://localhost/new_login/display.php');
+        		header('location:http://localhost/Employee-Management/display.php');
            
         }
         else{

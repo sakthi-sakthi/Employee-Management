@@ -11,7 +11,7 @@ if (isset($_GET['id']))
      $result = $conn->query($sql);
      if ($result == TRUE) 
      { 
-        header('location:http://localhost/new_login/display.php');
+        header('location:http://localhost/Employee-Management/display.php');
     }
     else
     {
