@@ -88,8 +88,8 @@ session_destroy();
                     {
                         ?>
                         <div class="alert alert-success alert-dismissible fade show " role="alert">
-                          <strong>Hey ! </strong> <?php echo $_SESSION['status'];?>
-                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                          <strong> Hey ! </strong> <?php echo $_SESSION['status'];?>
+                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>
                         </div>
                         <?php
                         
@@ -101,8 +101,8 @@ session_destroy();
                     {
                         ?>
                         <div class="alert alert-success alert-dismissible fade show " role="alert">
-                          <strong>Hey ! </strong> <?php echo $_SESSION['status'];?>
-                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                          <strong> Hey ! </strong> <?php echo $_SESSION['status'];?>
+                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
                         <?php
                         
@@ -176,6 +176,21 @@ session_destroy();
          });
     });
 </script>
+<script type="text/javascript">
+    window.setTimeout(function() {
+    $(".alert").fadeTo(500, 0).slideUp(500, function(){
+        $(this).remove(); 
+    });
+}, 2000);
+</script>
+<script type="text/javascript">
+    window.setTimeout(function() {
+    $(".alert").fadeTo(500, 0).slideUp(500, function(){
+        $(this).remove(); 
+    });
+}, 2000);
+</script>
+
 
                                   
                             </tr>
