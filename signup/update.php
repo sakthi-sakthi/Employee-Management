@@ -121,6 +121,7 @@ if(isset($_POST['submit'])){
 					 <?php
                             while ($row = $run->fetch_assoc())
                             { ?>
+					<label><b>Employee Name</b></label>
 					<div class="wrap-input100 validate-input" data-validate = "Employee Name is required">
 						<input class="input100" type="text" name="emp_name" placeholder="Employee Name" value="<?php echo $row['emp_name']; ?>" required>
 						<span class="focus-input100"></span>
@@ -128,23 +129,23 @@ if(isset($_POST['submit'])){
 							<i class="fa fa-user" aria-hidden="true"></i>
 						</span>
 					</div>
-
+					<label><b>Employee Id</b></label>
 					<div class="wrap-input100 validate-input" data-validate = "Employee Id is required">
 						<input class="input100" type="text" name="emp_id" placeholder="Employee Id" value="<?php echo $row['emp_id']; ?>" required>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-user" aria-hidden="true"></i>
+							<i class="fa fa-id-card" aria-hidden="true"></i>
 						</span>
 					</div>
-
+					<label><b>Employeer Name</b></label>
 					<div class="wrap-input100 validate-input" data-validate = "Employeer Name is required">
 						<input class="input100" type="text" name="employeer_name" placeholder="Employeer Name" value="<?php echo $row['employeer_name']; ?>" required>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-user" aria-hidden="true"></i>
+							<i class="fa fa-user-circle" aria-hidden="true"></i>
 						</span>
 					</div>
-
+					<label><b>Unit Name</b></label>
 					<div class="wrap-input100 validate-input" data-validate = "Unit is required">
 						<input class="input100" type="text" name="unit" placeholder="Enter Your Unit Name" value="<?php echo $row['unit']; ?>" required>
 						<span class="focus-input100"></span>
@@ -152,7 +153,7 @@ if(isset($_POST['submit'])){
 							<i class="fa fa-user" aria-hidden="true"></i>
 						</span>
 					</div>
-
+					<label><b>DOB</b></label>
 					<div class="wrap-input100 validate-input"data-validate = "Date of Birth is required">
 						<input class="input100" type="date" name="dob" placeholder="Date of Birth" value="<?php echo $row['dob']; ?>" required>
 						<span class="focus-input100"></span>
@@ -160,7 +161,7 @@ if(isset($_POST['submit'])){
 							<i class="fa fa-calendar" aria-hidden="true"></i>
 						</span>
 					</div>
-
+					<label><b>Email Address</b></label>
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 						<input class="input100" type="email" name="email" placeholder="Email" value="<?php echo $row['email']; ?>" required>
 						<span class="focus-input100"></span>
