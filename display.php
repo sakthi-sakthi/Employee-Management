@@ -48,11 +48,12 @@ session_destroy();
     </style>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Data Table </title>
+    <title>Employee Details</title>
     <meta content="" name="description">
     <meta content="Author" name="MJ Maraz">
     <link href="assets/images/img-02.png" rel="icon">
     <link href="assets/images/img-02.png" rel="apple-touch-icon">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- ========================================================= -->
@@ -96,17 +97,17 @@ session_destroy();
                         unset($_SESSION['status']);
                     }
               ?>
-               <?php 
-                    if(isset($_SESSION['status']))
+              <?php 
+                    if(isset($_SESSION['statuses']))
                     {
                         ?>
-                        <div class="alert alert-success alert-dismissible fade show " role="alert">
-                          <strong> Hey ! </strong> <?php echo $_SESSION['status'];?>
-                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="alert alert-danger alert-dismissible fade show " role="alert">
+                          <strong> Hey ! </strong> <?php echo $_SESSION['statuses'];?>
+                          <button type="button" class="btn-close" data-bs-dismiss="alerts" aria-label=""><span aria-hidden="true">&times;</span></button>
                         </div>
                         <?php
                         
-                        unset($_SESSION['status']);
+                        unset($_SESSION['statuses']);
                     }
               ?>    
                 <div class="data_table">
@@ -164,9 +165,7 @@ session_destroy();
                 var id = $(this).parents("tr").attr("id");
 
                 window.location.href="http://localhost/Employee-Management/delete.php?id="+id+"";
-                swal("Yaa! Record successfully deleted!", {
-                    icon: "success",
-                });
+               
             } else {
                 swal("Your record is safe!", {
                     icon: "success",
@@ -183,13 +182,7 @@ session_destroy();
     });
 }, 2000);
 </script>
-<script type="text/javascript">
-    window.setTimeout(function() {
-    $(".alert").fadeTo(500, 0).slideUp(500, function(){
-        $(this).remove(); 
-    });
-}, 2000);
-</script>
+
 
 
                                   

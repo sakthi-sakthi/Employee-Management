@@ -43,11 +43,12 @@ if(isset($_POST['submit'])){
 <html lang="en">
 <head>
 
-	<title>SignUp</title>
+	<title>Add Employee</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!--===============================================================================================-->	
+<!--===============================================================================================-->
+<link href="images/img-03.png" rel="icon">	
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
 <!--===============================================================================================-->
@@ -72,6 +73,7 @@ if(isset($_POST['submit'])){
 			<div class="wrap-login100">
 				<div class="login100-pic js-tilt" data-tilt>
 					<img src="images/img-02.png" alt="IMG">
+					<link href="images/img-03.png" rel="icon">
 				</div>
 
 				<form class="login100-form validate-form" action="" method="POST" autocomplete="off">
@@ -133,7 +135,8 @@ if(isset($_POST['submit'])){
 
 		
 					<div class="container-login100-form-btn">
-					<button class="insert login100-form-btn" name="submit">Submit</button>
+					<button class="btn btn-success" name="submit">Submit</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<a href="http://localhost/Employee-Management/display.php" style="color: white; font-size: 14px; font-weight: bold; letter-spacing: 2px; text-decoration: none;"><input type="button" name="cancel" class="btn btn-danger" Value="Cancel"></a>
 					</div>
 					
 				</form>

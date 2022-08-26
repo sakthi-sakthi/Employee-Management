@@ -91,6 +91,7 @@ function get($sakthi)
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
     <link href="/new_login/colorlib-regform-8/images/Trademark-removebg-preview.png" rel="icon">
+    <link href="images/img-03.png" rel="icon">
     <!-- Main css -->
     <link rel="stylesheet" href="css/style.css">
 </head>

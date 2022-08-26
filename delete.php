@@ -15,6 +15,7 @@ if (isset($_GET['id']))
      $result = $conn->query($sql);
      if ($result == TRUE) 
      { 
+        $_SESSION['statuses'] = "Record Deleted Successfully";
         header('location:http://localhost/Employee-Management/display.php');
     }
     else
@@ -23,4 +24,5 @@ if (isset($_GET['id']))
           }
 } 
 ?>
+
 

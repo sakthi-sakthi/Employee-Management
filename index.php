@@ -15,6 +15,7 @@ if(isset($_POST['email']) && isset($_POST['password']))
   $email=validate($_POST['email']);
   $password=validate($_POST['password']);
 
+
   if (empty($email))
   {
 
@@ -24,6 +25,7 @@ if(isset($_POST['email']) && isset($_POST['password']))
   }
   elseif (empty($password))
   {
+    
     
     header("location:index.php?error=Password is required !");
     exit(); 
@@ -69,7 +71,7 @@ if(isset($_POST['email']) && isset($_POST['password']))
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
-     <link href="images/img-03.png" rel="icon">
+    <link href="images/img-03.png" rel="icon">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
 
     <!-- Bootstrap CSS -->

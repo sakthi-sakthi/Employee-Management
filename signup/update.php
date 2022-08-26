@@ -71,6 +71,7 @@ if(isset($_POST['submit'])){
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	 
 <!--===============================================================================================-->
 	
 <!--===============================================================================================-->	
@@ -89,19 +90,6 @@ if(isset($_POST['submit'])){
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
-	<!--  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	 <script type="text/javascript">
-        $(document).ready(function() {
-        $(".update").click(function(){
-			swal({
-				  title: "Update Success!",
-				  text: "Your record updated successfully !",
-				  icon: "success",
-				});
-
-        });
-    });
-</script> -->
 </head>
 <body>
 
@@ -121,7 +109,7 @@ if(isset($_POST['submit'])){
 					 <?php
                             while ($row = $run->fetch_assoc())
                             { ?>
-					<label><b>Employee Name</b></label>
+                            	<label><b>Employee Name</b></label>
 					<div class="wrap-input100 validate-input" data-validate = "Employee Name is required">
 						<input class="input100" type="text" name="emp_name" placeholder="Employee Name" value="<?php echo $row['emp_name']; ?>" required>
 						<span class="focus-input100"></span>
@@ -172,8 +160,9 @@ if(isset($_POST['submit'])){
 					
 						<?php  } ?> 
 					<div class="container-login100-form-btn">
-					<button class="update login100-form-btn" name="submit">Update</button>
+					<button class="btn btn-success" name="submit">Update</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="http://localhost/Employee-Management/display.php" style="color: white; font-size: 14px; font-weight: bold; letter-spacing: 2px; text-decoration: none;"><input type="button" name="cancel" class="btn btn-danger" Value="Cancel"></a>
 					</div>
+				
 				</form>
 			</div>
 		</div>
