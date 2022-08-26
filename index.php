@@ -109,13 +109,7 @@ if(isset($_POST['email']) && isset($_POST['password']))
                <?php if (isset($_GET['error'])) {?>
                 <p class="error"><?php echo $_GET['error'];?></p>
               <?php }?>
-              <div class="d-flex mb-5 align-items-center">
-                <label class="control control--checkbox mb-0"><span class="caption">Remember me</span>
-                <input type="checkbox" name="rem" />
-                <div class="control__indicator"></div>
-              </label>
               
-             </div>
                 <div class="container">
             <label> Don't Have an account ?</label> <a style="text-decoration: none; color: darkblue;" href="http://localhost/Employee-Management/reg-form/register.php">Register Here</a>
       </br></br>
