@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 19, 2022 at 01:55 PM
+-- Generation Time: Aug 26, 2022 at 11:01 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `employee` (
-  `id` int(255) NOT NULL,
+  `id` int(30) NOT NULL,
   `emp_name` varchar(255) NOT NULL,
   `emp_id` varchar(30) NOT NULL,
   `employeer_name` varchar(255) NOT NULL,
@@ -42,7 +42,8 @@ CREATE TABLE `employee` (
 --
 
 INSERT INTO `employee` (`id`, `emp_name`, `emp_id`, `employeer_name`, `unit`, `dob`, `email`) VALUES
-(139, 'sakthi', '202022', 'jerome', '3-P', '2002-05-15', 'sakthi@gmail.com');
+(1, 'Sakthi Ganapathi', '2022208', 'Jerome Jermanus', '2-C', '2002-05-15', 'sakthi123@gmail.com'),
+(2, 'Preethi', '2022204', 'Jerome Jermanus', '1-A', '2002-09-10', 'preethi@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -62,8 +63,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES
-(9, 'SAKTHI GANAPATHI.S', 'sakthiganapathis97@gmail.com', '1234567'),
-(10, 'PREETHI.C', 'preethi123@gmail.com', '0987654321');
+(1, 'Sakthi Ganapathi', 'sakthi123@gmail.com', '1234567');
 
 --
 -- Indexes for dumped tables
@@ -89,13 +89,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `employee`
 --
 ALTER TABLE `employee`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=140;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
