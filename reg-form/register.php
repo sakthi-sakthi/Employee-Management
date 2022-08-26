@@ -123,11 +123,7 @@ function get($sakthi)
                             <span class="error"><?php echo $passwordErr;?></span>
                         </div>
                         
-                        <div class="form-group">
-                            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
-                            <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in Terms of service</a></label>
-                        </div>
-                        
+              
                         <div class="form-group">
                             <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up"/>
                         </div>
